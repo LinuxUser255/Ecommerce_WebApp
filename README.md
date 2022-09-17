@@ -2,6 +2,12 @@
 
 ## A full stack web app for processing credit cards, and more.
 
+
+![pay-portal-resize-02](https://user-images.githubusercontent.com/46334926/190836212-e69c0a98-0535-4e4e-ab19-ef6f6f3c4e1a.png)
+
+
+
+
 ### How to run the basic server:
 
 ```
