@@ -36,6 +36,7 @@ var templateFS embed.FS
 // Info from the Struct above, or a variable created with a "type" of template data.
 // Will add the default data using this function. td is a pointer to the template data, and makes an http request.
 func (app *application) addDefaultData(td *templateData, r *http.Request) *templateData {
+	td.API = app.config.api
 	return td
 }
 
@@ -47,7 +48,7 @@ struct, and partials.
 func (app *application) renderTemplate(w http.ResponseWriter, r *http.Request, page string, td *templateData, partials ...string) error {
 	var t *template.Template
 	var err error
-	templateToRender := fmt.Sprintf("templates/%s.page.tmpl", page)
+	templateToRender := fmt.Sprintf("templates/%s.page.gohtml", page)
 
 	// Check to see if the variable from application config, is present in the template cache,(Ignore the first return parameter).
 	_, templateInMap := app.templateCache[templateToRender]
@@ -96,9 +97,9 @@ func (app *application) parseTemplate(partials []string, page string, templateTo
 
 	// If partials are present, then must call the parse template function/file system: ParseFS.
 	if len(partials) > 0 {
-		t, err = template.New(fmt.Sprintf("%s.page.tmpl", page)).Funcs(functions).ParseFS(templateFS, "templates/base.layout.gohtml", strings.Join(partials, ","), templateToRender)
+		t, err = template.New(fmt.Sprintf("%s.page.gohtml", page)).Funcs(functions).ParseFS(templateFS, "templates/base.layout.gohtml", strings.Join(partials, ","), templateToRender)
 	} else {
-		t, err = template.New(fmt.Sprintf("%s.page.tmpl", page)).Funcs(functions).ParseFS(templateFS, "templates/base.layout.gohtml", templateToRender)
+		t, err = template.New(fmt.Sprintf("%s.page.gohtml", page)).Funcs(functions).ParseFS(templateFS, "templates/base.layout.gohtml", templateToRender)
 	}
 	if err != nil {
 		app.errorLog.Println(err)
