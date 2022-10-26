@@ -6,8 +6,7 @@
 ### A full stack web app for processing credit cards, and more.
 
 
-![GO-WEB-APP-PAYMENT-PORTAL](https://user-images.githubusercontent.com/46334926/194616436-d5ef05c9-5715-4559-93c9-7bb35d5f4b9b.png)
-
+![pay-portal-homepage](https://user-images.githubusercontent.com/46334926/197931336-c11fc238-7589-4e38-abd6-e738524e0867.png)
 
 
 
