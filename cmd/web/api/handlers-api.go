@@ -1,8 +1,8 @@
 package main
 
 import (
+	"awesomeProject1/internal/cards"
 	"encoding/json"
-	"myapp/internal/cards"
 	"net/http"
 	"strconv"
 )
