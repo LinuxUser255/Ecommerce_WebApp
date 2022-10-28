@@ -1,4 +1,5 @@
-module awesomeProject1
+module github.com/LinuxUser255/Ecommerce
+
 
 go 1.19
 

@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/json"
-	"myapp/internal/cards"
+	"github.com/LinuxUser255/Ecommerce/internal/cards"
 	"net/http"
 	"strconv"
 )
