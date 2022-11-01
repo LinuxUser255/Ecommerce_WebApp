@@ -4,7 +4,8 @@
 ### A full stack web app for processing credit cards, and more.
 
 
-![pay-portal-homepage](https://user-images.githubusercontent.com/46334926/197931336-c11fc238-7589-4e38-abd6-e738524e0867.png)
+![Payment-Portal-homepage](https://user-images.githubusercontent.com/46334926/199261513-9c6049f4-c34b-45b7-89a1-53e5d0ac1671.png)
+
 
 
 
