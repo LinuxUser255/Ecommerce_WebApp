@@ -23,8 +23,15 @@ go run ./cmd/web
 You will need to obtain a Stripe API key in order to run this app:
 ```
 <https://stripe.com/docs/keys>
+
 ```
-Also Bootstrap docs:
+Link to air.
+"Air is a live-reloading command line utility for Go applications in development"
+```
+<https://github.com/cosmtrek/air>
+
+```
+Bootstrap docs:
 ```
 <https://getbootstrap.com/docs/5.0/getting-started/introduction>
 
